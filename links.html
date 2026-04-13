@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tesi · Links</title>
+  <meta name="description" content="Todos los links de Tesi — Teresita Castelli. Portfolio, tienda, redes.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🪡%3C/text%3E%3C/svg%3E">
+
+  <style>
+    :root {
+      --bg: #f4ead9;
+      --text: #2b211a;
+      --text-muted: #6b5a48;
+      --accent: #b8472a;
+      --gold: #b8893b;
+      --moss: #556b3e;
+      --rule: #d9c9a8;
+      --font-display: 'Fraunces', 'Times New Roman', serif;
+      --font-body: 'Inter', -apple-system, system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .linktree {
+      max-width: 420px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    /* Profile */
+    .profile {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile__avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .profile__name {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin: 0 0 0.25rem;
+    }
+
+    .profile__bio {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Link cards */
+    .link-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9375rem;
+      letter-spacing: 0.02em;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      position: relative;
+    }
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .link-card__emoji {
+      position: absolute;
+      left: 1.25rem;
+      font-size: 1.25rem;
+    }
+
+    /* Card variants */
+    .link-card--portfolio {
+      background: var(--text);
+      color: var(--bg);
+    }
+
+    .link-card--tienda-ar {
+      background: var(--gold);
+      color: #fff;
+    }
+
+    .link-card--tienda-int {
+      background: var(--moss);
+      color: #fff;
+    }
+
+    .link-card--instagram {
+      background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+      color: #fff;
+    }
+
+    .link-card--whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .link-card--email {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .link-card--tiktok {
+      background: #010101;
+      color: #fff;
+    }
+
+    /* Divider */
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--rule);
+      margin: 0.5rem 0;
+    }
+
+    /* Footer */
+    .linktree__footer {
+      margin-top: 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+
+    .linktree__footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .linktree__footer em {
+      font-family: var(--font-display);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="linktree">
+
+    <!-- Profile -->
+    <div class="profile">
+      <img
+        src="assets/images/fotos%20de%20arte/Foto%20de%20Teresita%20la%20artista/99ADE429-FB7D-4290-9FAF-ADF149D477F1.JPG"
+        alt="Teresita Castelli"
+        class="profile__avatar"
+      >
+      <h1 class="profile__name">Tesi</h1>
+      <p class="profile__bio">Teresita Castelli · Bordados en miniatura hechos a mano, encapsulados en acrílico. Buenos Aires.</p>
+    </div>
+
+    <!-- Links -->
+    <a href="https://tesistudio.com" target="_blank" rel="noopener" class="link-card link-card--portfolio">
+      <span class="link-card__emoji">🪡</span>
+      Portfolio
+    </a>
+
+    <a href="https://tesi4.mitiendanube.com" target="_blank" rel="noopener" class="link-card link-card--tienda-ar">
+      <span class="link-card__emoji">🛒</span>
+      Tienda Argentina
+    </a>
+
+    <!-- Tienda Internacional - descomentar cuando esté lista
+    <a href="#" class="link-card link-card--tienda-int">
+      <span class="link-card__emoji">🌎</span>
+      International Shop
+    </a>
+    -->
+
+    <div class="divider"></div>
+
+    <a href="https://www.instagram.com/t.t.s_proceso/" target="_blank" rel="noopener" class="link-card link-card--instagram">
+      <span class="link-card__emoji">📸</span>
+      Instagram
+    </a>
+
+    <a href="https://wa.me/5491155771131" target="_blank" rel="noopener" class="link-card link-card--whatsapp">
+      <span class="link-card__emoji">💬</span>
+      WhatsApp
+    </a>
+
+    <a href="mailto:teresitagcastelli@gmail.com" class="link-card link-card--email">
+      <span class="link-card__emoji">✉️</span>
+      Email
+    </a>
+
+    <!-- Footer -->
+    <div class="linktree__footer">
+      <p><em>Hecho a mano con hilo, oro y paciencia.</em></p>
+      <p>© 2026 <a href="https://tesistudio.com">Teresita Castelli</a></p>
+    </div>
+
+  </div>
+
+</body>
+</html>
