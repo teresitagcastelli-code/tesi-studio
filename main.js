@@ -49,3 +49,24 @@ document.querySelectorAll('.animate-on-scroll, .project-card').forEach(el => {
   el.classList.add('animate-on-scroll');
   io.observe(el);
 });
+
+// Scroll-spy — highlight active nav link
+const navLinks = document.querySelectorAll('.nav__links a[href^="#"]');
+const sections = [];
+
+navLinks.forEach(link => {
+  const id = link.getAttribute('href').slice(1);
+  const section = document.getElementById(id);
+  if (section) sections.push({ el: section, link });
+});
+
+const spyObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    const match = sections.find(s => s.el === entry.target);
+    if (match) {
+      match.link.classList.toggle('is-active', entry.isIntersecting);
+    }
+  });
+}, { threshold: 0, rootMargin: '-40% 0px -55% 0px' });
+
+sections.forEach(s => spyObserver.observe(s.el));
