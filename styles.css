@@ -134,13 +134,23 @@ body::before {
 .nav__brand { display: flex; align-items: center; gap: .75rem; }
 .nav__mark {
   width: 2.25rem; height: 2.25rem;
-  display: grid; place-items: center;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
   border: 1.5px solid var(--text);
   border-radius: 50%;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: .85rem;
-  letter-spacing: -0.02em;
+  line-height: 1;
+  gap: 0;
+}
+.nav__mark-top {
+  font-size: .65rem;
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+}
+.nav__mark-bot {
+  font-size: .55rem;
+  text-transform: lowercase;
+  margin-top: -1px;
 }
 .nav__name { font-family: var(--font-display); font-size: 1rem; font-weight: 600; }
 .nav__links { display: flex; gap: 2rem; align-items: center; font-size: .95rem; }
@@ -161,6 +171,16 @@ body::before {
   transition: background var(--t-fast), color var(--t-fast);
 }
 .nav__cta:hover { background: var(--text); color: var(--bg); }
+.nav__cta--shop {
+  background: var(--moss);
+  border-color: var(--moss);
+  color: oklch(96.5% 0.012 75);
+}
+.nav__cta--shop:hover {
+  background: oklch(35% 0.06 145);
+  border-color: oklch(35% 0.06 145);
+  color: oklch(96.5% 0.012 75);
+}
 
 .nav__toggle { display: none; width: 2rem; height: 2rem; flex-direction: column; justify-content: center; gap: 4px; }
 .nav__toggle span { display: block; height: 1.5px; background: var(--text); transition: transform var(--t-fast), opacity var(--t-fast); }
