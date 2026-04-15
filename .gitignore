@@ -2,6 +2,12 @@
 
 .DS_Store
 *.xlsx
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.avi
+assets/video/raw/
 .impeccable.md
 .vercel
 tienda-preview.html
