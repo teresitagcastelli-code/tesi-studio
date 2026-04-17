@@ -479,13 +479,13 @@ body::before {
   font-weight: 600;
   letter-spacing: .08em;
   text-transform: uppercase;
-  color: oklch(80% 0.01 150);
+  color: oklch(90% 0.015 75);
   display: flex;
   align-items: center;
   gap: .5rem;
 }
 .process__moment-label span {
-  color: var(--carmine);
+  color: oklch(82% 0.025 75);
   font-size: .7rem;
   letter-spacing: .12em;
 }
