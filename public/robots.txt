@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# AI crawlers — permitted for indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://tesistudio.com/sitemap.xml
