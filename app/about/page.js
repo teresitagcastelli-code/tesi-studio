@@ -14,7 +14,7 @@ export default function About() {
         <p className="tts-eyebrow">{a.eyebrow} · {a.statementHead}</p>
         <div className="dirA__statement-prose">
           {a.statement.map((para, i) => (
-            <p key={i} className={i === 0 ? 'dirA__statement-lead' : ''}>{para}</p>
+            <p key={i}>{para}</p>
           ))}
         </div>
       </section>
